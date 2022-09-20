@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/**
+ * @author COLLECTIF - @TIMCSF
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Menu
+ * Grille
+ * Mise en page
+ *** Contenus principal et complémentaire
+ *** Architecture des CSS (liste de définitions)
+ *** Pied de page
+ */
+
+/* Normalize
+   ========================================================================== */
+@import "normalize";
+
+/* Utilitaires
+   ========================================================================== */
+@import "utilitaires";
+
+/* Charte typographique
+   ========================================================================== */
+@import "typo";
+
+/* Menu
+   ========================================================================== */
+@import "menu";
+
+/* Grille
+   ========================================================================== */
+@import "grille";
+
+/* Mise en page
+   ========================================================================== */
+
+
+.menu {
+
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2em;
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__lien {
+        list-style: none;
+    }
+}
+
+
+main {
+    background-color: rgb(211, 254, 223);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+h2 {
+    display: inline-block;
+}
+h3 {
+    color: green;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+p {
+    margin-left: 1em;
+    margin-right: 1em;
+    
+
+    &__intro {
+        text-align: center;
+    }
+}
+.plan1 {
+ background-color: white;
+ margin: 1.5em;
+
+    &__entete {
+        text-align: center;
+        background-color: #00ad6a;
+        color: white;
+    }
+    &__h2{
+        margin-left: 0.6em;
+        margin-top: 0.5em;
+        color: #00ad6a;
+        font-size: 2em;
+    }
+    &__h3 {
+        display: inline-block;
+        color: gray;
+        font-weight: normal;
+    }
+    &__p {
+        text-decoration: underline;
+    }
+    &__list{
+        text-decoration: underline;
+        color: gray;
+    }
+    &__sign{
+        text-align: center;
+        background-color: #1fe374;
+        color: black;
+        text-decoration: underline;
+        margin-bottom: 1em;
+    }
+    
+}
+footer {
+    background-color: black;
+}
