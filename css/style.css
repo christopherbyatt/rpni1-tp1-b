@@ -89,7 +89,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -735,6 +736,10 @@ h4,
   align-items: center;
   margin-right: 2em;
 }
+.menu__logo {
+  padding-left: 3rem;
+  margin-top: 3rem;
+}
 .menu__item {
   display: flex;
   flex-wrap: wrap;
@@ -805,9 +810,46 @@ p__intro {
   text-decoration: underline;
   margin-bottom: 1em;
 }
-
+.faq {
+  background-color: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.faq__h2 {
+  font-weight: 700;
+}
+.h4 {
+  padding-left: 1.5rem;
+}
 footer {
   background-color: black;
 }
-
-/*# sourceMappingURL=style.css.map */
+.footer__logo {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+.footer__button {
+  background-image:  linear-gradient(90deg,#00ab6a,#23ea76);
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding-top: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 2rem;
+}
+.footer__ul {
+  display: block;
+}
+.footer__colonne {
+  text-decoration: none;
+}
+.droits {
+  color: gray;
+}
+.droits {
+  color: gray;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+}
